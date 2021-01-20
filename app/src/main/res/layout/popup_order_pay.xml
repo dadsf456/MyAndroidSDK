@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:padding="@dimen/dp_spacing"
+            android:text="支付方式" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pay_we_chat" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="微信支付"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="推荐微信用户使用"
+                android:textColor="#ff888888"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/item_selector_cb" />
+    </LinearLayout>
+
+    <View style="@style/HLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/ll_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pay_ali" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="支付宝支付"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="推荐支付宝用户使用"
+                android:textColor="#ff888888"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/item_selector_cb" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FFEEEEEE" />
+
+    <LinearLayout
+        android:id="@+id/ll_money"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_balance" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额支付"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="推荐支付宝用户使用"
+                android:textColor="#ff888888"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/item_selector_cb" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#FFF3F5F6" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:text="共"
+            android:textColor="#878787" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/Content_sp15_normal"
+            android:padding="@dimen/dp_3"
+            android:textColor="#878787"
+            tools:text="2" />
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:text="件"
+            android:textColor="#878787" />
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="合计：" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            style="@style/Content_sp15_normal"
+            android:textColor="#E6000A"
+            tools:text="￥280.00" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/dp_4"
+            android:layout_height="wrap_content" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_confirm"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:text="提交订单"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_18"
+            app:cvCornersRadius="@dimen/dp_20"
+            app:cvNormalBgColor="#8F1D22" />
+    </LinearLayout>
+</LinearLayout>

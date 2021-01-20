@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBg"
+    tools:ignore="RtlHardcoded,RtlSymmetry,NestedWeights">
+
+    <View
+        android:id="@+id/v_bg"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/img_mine01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/mStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/mTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintTop_toBottomOf="@id/mStatusBar">
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:text="个人中心" />
+
+        <ImageButton
+            android:id="@+id/btn_message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_home_message" />
+    </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_28"
+        android:background="@drawable/img_mine03"
+        app:layout_constraintTop_toBottomOf="@id/mTopBar">
+
+        <com.tool.cs.common.widget.AvatarImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="@dimen/dp_11"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:layout_marginTop="@dimen/dp_7"
+            app:aiv_isCircle="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_avatar_normal" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Content_sp15_normal"
+            android:layout_marginStart="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:layout_marginTop="@dimen/dp_3"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/iv_avatar"
+            app:layout_constraintTop_toTopOf="@id/iv_avatar"
+            tools:text="维度-XXX" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/Content_sp15_normal"
+            android:layout_marginStart="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/iv_avatar"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="134000000000" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_modify_info"
+            style="@style/Content_sp12_normal"
+            android:layout_height="@dimen/dp_24"
+            android:paddingLeft="8.5dp"
+            android:paddingRight="8.5dp"
+            android:text="修改资料"
+            app:cvCornersBottomLeftRadius="@dimen/dp_20"
+            app:cvCornersTopLeftRadius="@dimen/dp_20"
+            app:cvNormalBgColor="#E6F5FF"
+            app:cvStrokeColor="#224270"
+            app:cvStrokeWidth="@dimen/dp_0_5"
+            app:cvTintIconEnd="#000"
+            app:layout_constraintBottom_toBottomOf="@id/iv_avatar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_avatar"
+            tools:ignore="RtlSymmetry" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginTop="156dp"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/dp_41"
+        android:background="@drawable/img_mine02"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_vip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="会员中心"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_vip" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_upgrade"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="我要升级"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_upgrade" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="客服中心"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_service" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_wallet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="我的钱包"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_wallet" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="我的订单"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_order" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_shop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="购物车"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_cart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_favorites"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="我的收藏"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_favorites"
+                tools:ignore="NestedWeights" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_verify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="我的实名"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_verify" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_invite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="我的邀请"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_invite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_benefits"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="会员权益"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_qy" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="收货地址"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_address" />
+
+            <com.tool.cs.common.widget.ComplexView
+                android:id="@+id/cv_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="设置"
+                app:cvIconSizeTop="28.5dp"
+                app:cvIconTop="@drawable/ic_mine_settings" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

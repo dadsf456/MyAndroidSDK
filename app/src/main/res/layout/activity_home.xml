@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_horizontal_line"
+    android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/mStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:background="@color/colorHighlight" />
+
+    <com.tool.cs.common.widget.NoScrollViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.tool.cs.common.widget.BottomNavigationBar
+        android:id="@+id/mBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <com.tool.cs.common.widget.BottomNavigationTab
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:defaultColor="@color/colorTabNormal"
+            app:defaultIcon="@drawable/tab_home_normal"
+            app:iconSize="21.5dp"
+            app:pressedColor="@color/colorHighlight"
+            app:pressedIcon="@drawable/tab_home_select"
+            app:tabText="@string/tab_home1"
+            app:textSize="@dimen/sp_12" />
+
+        <com.tool.cs.common.widget.BottomNavigationTab
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:defaultColor="@color/colorTabNormal"
+            app:defaultIcon="@drawable/tab_mall_normal"
+            app:iconSize="21.5dp"
+            app:pressedColor="@color/colorHighlight"
+            app:pressedIcon="@drawable/tab_mall_normal"
+            app:tabText="@string/tab_mall"
+            app:textSize="@dimen/sp_12" />
+
+        <com.tool.cs.common.widget.BottomNavigationTab
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:defaultColor="@color/colorTabNormal"
+            app:defaultIcon="@drawable/tab_study_normal"
+            app:iconSize="21.5dp"
+            app:pressedColor="@color/colorHighlight"
+            app:pressedIcon="@drawable/tab_study_select"
+            app:tabText="@string/tab_study"
+            app:textSize="@dimen/sp_12" />
+
+        <com.tool.cs.common.widget.BottomNavigationTab
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:defaultColor="@color/colorTabNormal"
+            app:defaultIcon="@drawable/tab_mine_normal"
+            app:iconSize="21.5dp"
+            app:pressedColor="@color/colorHighlight"
+            app:pressedIcon="@drawable/tab_mine_select"
+            app:tabText="@string/tab_mine"
+            app:textSize="@dimen/sp_12" />
+    </com.tool.cs.common.widget.BottomNavigationBar>
+</LinearLayout>

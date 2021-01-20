@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="colorPrimary">#E6000A</color>
+    <color name="colorPrimaryDark">#F7CA50</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorBtnNormalBg">#244C73</color>
+    <color name="colorBtnPressBg">#335F89</color>
+    <color name="colorBtnDisableBg">#D2D2D2</color>
+
+    <color name="colorText">#000</color>
+    <color name="colorTextHighlight">#A2804E</color>
+    <color name="colorHint">#ABABAD</color>
+    <color name="colorLine">#D2D2D2</color>
+    <color name="colorRed">#E6000A</color>
+    <color name="colorBlue">#0290FF</color>
+    <color name="colorPink">#FE8469</color>
+    <color name="transparent">#0000</color>
+
+    <color name="colorHighlight">#263B6A</color>
+    <color name="colorTabNormal">#C0C0C0</color>
+
+    <color name="activityBg">#F3F5F5</color>
+    <color name="segment">#00479D</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gray_e">#eee</color>
+    <color name="gray_9">#999</color>
+    <color name="gray_6">#666</color>
+    <color name="gray_3">#333</color>
+    <color name="no_1">#F7CA50</color>
+    <color name="no_2">#C9C9C9</color>
+    <color name="no_3">#9C561D</color>
+</resources>

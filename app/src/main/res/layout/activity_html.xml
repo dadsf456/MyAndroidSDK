@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.example.myandroidsdk.ui.widget.TermsWebView
+            android:id="@+id/mWebView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/activityBg" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dp_spacing"
+            android:enabled="false"
+            android:text="我已同意协议"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone"
+            app:cvCornersRadius="@dimen/dp_20"
+            app:cvDisableBgColor="@color/colorBtnDisableBg"
+            app:cvNormalBgColor="@color/colorBtnNormalBg"
+            app:cvPressedBgColor="@color/colorBtnPressBg"
+            app:cvSelector="standard" />
+    </LinearLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

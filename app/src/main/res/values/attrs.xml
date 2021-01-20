@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="interval" format="integer" />
+    <attr name="showIndicator" format="boolean" />
+    <attr name="orientation" format="enum">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="autoPlaying" format="boolean" />
+    <declare-styleable name="BannerLayout">
+        <attr name="interval" />
+        <attr name="indicator" format="enum">
+            <enum name="none" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="text" value="2" />
+        </attr>
+        <attr name="orientation" />
+        <attr name="autoPlaying" />
+        <attr name="indicatorSelectedSrc" format="color|reference" />
+        <attr name="indicatorUnselectedSrc" format="color|reference" />
+        <attr name="indicatorSpace" format="dimension|reference" />
+        <attr name="indicatorMarginLeft" format="dimension|reference" />
+        <attr name="indicatorMarginRight" format="dimension|reference" />
+        <attr name="indicatorMarginBottom" format="dimension|reference" />
+        <attr name="indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+    <!--自定义RatingBar属性-->
+    <declare-styleable name="SeniorRatingBar">
+        <attr name="sSize" format="reference|dimension" />
+        <attr name="sRating" format="reference|integer" />
+        <attr name="sProgress" format="reference|float" />
+        <attr name="sEmptyColor" format="reference|color" />
+        <attr name="sFullColor" format="reference|color" />
+        <attr name="sPadding" format="reference|dimension" />
+        <attr name="sEnableHalf" format="reference|boolean" />
+        <attr name="sEnableDrag" format="reference|boolean" />
+    </declare-styleable>
+</resources>

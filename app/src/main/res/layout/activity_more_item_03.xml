@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/dp_5"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <com.example.myandroidsdk.ui.widget.RatioImageView-->
+<!--            android:id="@+id/tv_bar_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minWidth="@dimen/dp_50"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:src="@mipmap/ic_launcher"-->
+<!--            android:text="我是内容呀"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/sp_18" />-->
+
+        <com.example.myandroidsdk.ui.widget.RatioImageView
+            android:id="@+id/iv_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_0_5"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_pictures_error" />
+<!--        <ImageView-->
+<!--            android:src="@drawable/ic_pictures_error"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:id="@+id/iv_cat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginBottom="11dp"-->
+<!--            tools:src="@drawable/ic_pictures_error" />-->
+
+        <TextView
+            android:layout_marginStart="6.5dp"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginBottom="5.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="商品名称"
+            android:textSize="@dimen/dp_20" />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

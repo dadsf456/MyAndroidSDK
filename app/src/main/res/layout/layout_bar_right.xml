@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_right"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_50"
+    android:layout_gravity="right"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+
+
+    <ImageButton
+        android:id="@+id/btn_01"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:background="@null"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_home_search"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btn_02"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:background="@null"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_cart"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btn_03"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:background="@null"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_home_share"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView style="@style/AppBarTextButton" />
+</LinearLayout>

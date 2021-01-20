@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="topBar" type="id" />
+    <item name="tv_bar_title" type="id" />
+    <item name="tv_bar_text_btn" type="id" />
+    <item name="iv_bar_image_btn" type="id" />
+</resources>

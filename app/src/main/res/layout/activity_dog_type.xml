@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/mStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:background="@color/colorHighlight" />
+
+    <FrameLayout style="@style/TopBar">
+
+        <TextView
+            style="@style/AppBarTitle"
+            android:text="@string/tab_category" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_page_error" />
+
+    <include layout="@layout/layout_search" />
+
+    <View style="@style/HLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_e"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            tools:ignore="RtlSymmetry">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:overScrollMode="never"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_content"
+            style="@style/EtStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@drawable/shape_question_commit_bg"
+            android:gravity="left|top"
+            android:hint="@string/hint_feedback_content"
+            android:padding="@dimen/dp_3"
+            tools:ignore="RtlHardcoded" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_contact"
+            style="@style/EtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_feedback_contact"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:textColorHint="@color/colorHint" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="81.5dp"
+            android:layout_marginRight="81.5dp"
+            android:layout_marginBottom="18dp"
+            android:enabled="false"
+            android:text="@string/text_btn_submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_18"
+            app:cvCornersRadius="@dimen/dp_20"
+            app:cvDisableBgColor="@color/colorBtnDisableBg"
+            app:cvNormalBgColor="@color/colorBtnNormalBg"
+            app:cvPressedBgColor="@color/colorBtnPressBg"
+            app:cvSelector="standard" />
+    </FrameLayout>
+</LinearLayout>

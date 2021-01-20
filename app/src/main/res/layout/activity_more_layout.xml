@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_horizontal_line"
+    android:orientation="vertical"
+    android:showDividers="middle"
+
+    >
+<!--    android:showDividers="middle"  这个东西写了就有风格线记得-->
+
+    <View
+        android:id="@+id/mStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:background="@color/colorHighlight" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorHighlight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_31"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingLeft="@dimen/dp_14"
+            android:text="搜索"
+            android:textColor="@color/colorHint"
+            app:cvCornersRadius="@dimen/dp_16"
+            app:cvGravity="left"
+            app:cvIconStart="@drawable/ic_search"
+            app:cvNormalBgColor="#374D76"
+            app:cvTintIconStart="@color/white"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageButton
+            android:id="@+id/btn_message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="end"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_home_message" />
+
+        <ImageButton
+            android:id="@+id/btn_home_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="end"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_home_back" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_recycler_refresh" />
+
+</LinearLayout>

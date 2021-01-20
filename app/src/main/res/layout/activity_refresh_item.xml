@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_100"
+    android:background="@android:color/white"
+    app:cardCornerRadius="@dimen/dp_5"
+    app:cardElevation="@dimen/dp_3">
+    <!--    <View-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:id="@+id/mStatusBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/dp_0"-->
+    <!--        android:background="@color/colorHighlight" />-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_gravity="center_vertical"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@mipmap/ic_launcher" />-->
+    <!--   <TextView-->
+    <!--       android:text="我是内容啊!"-->
+    <!--       android:layout_gravity="center_vertical"-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="wrap_content"/>-->
+
+    <com.tool.cs.common.widget.ComplexView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="@dimen/dp_50"
+        android:scaleType="fitXY"
+        android:text="我是内容呀"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        app:cvGravity="center"
+        app:cvIconPadding="@dimen/dp_100"
+        app:cvIconSizeStart="@dimen/dp_50"
+        app:cvIconStart="@mipmap/ic_launcher" />
+</android.support.v7.widget.CardView>

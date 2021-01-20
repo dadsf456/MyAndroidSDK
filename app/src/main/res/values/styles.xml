@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--字体大小-->
+    <dimen name="sp_bar_title">@dimen/sp_20</dimen><!--App Bar标题-->
+    <dimen name="sp_sub_title">@dimen/sp_15</dimen><!--小标题-->
+    <dimen name="sp_content">@dimen/sp_13</dimen><!--正文/按钮文字-->
+    <dimen name="sp_small_word">@dimen/sp_12</dimen><!--小字提示-->
+    <dimen name="dp_spacing">@dimen/dp_16</dimen><!--页面左右间距-->
+    <dimen name="dp_item_height">@dimen/dp_45</dimen>
+
+    <!--登录 注册 修改密码 绑定手机等输入框-->
+    <style name="LoginEtStyle" parent="EtStyle">
+        <item name="android:background">@drawable/shape_edt_bg</item>
+    </style>
+
+    <!--页面顶部bar-->
+    <style name="TopBar">
+        <item name="android:id">@id/topBar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:background">@color/colorHighlight</item>
+    </style>
+
+    <!--顶部bar title样式-->
+    <style name="AppBarTitle" parent="BaseTextStyle">
+        <item name="android:id">@id/tv_bar_title</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--返回按钮样式-->
+    <style name="BtnBack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/ic_back</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/dp_18</item>
+        <item name="android:onClick">onBack</item>
+    </style>
+
+    <style name="AppBarTextButton">
+        <item name="android:id">@id/tv_bar_text_btn</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/dp_12</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="BaseTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+<!--popupWindow的熟悉↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+    <style name="top_down_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_top_down_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_top_down_exit_anim</item>
+    </style>
+
+    <style name="down_top_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_down_top_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_down_top_exit_anim</item>
+    </style>
+
+    <style name="left_right_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_left_right_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_left_right_exit_anim</item>
+    </style>
+
+    <style name="right_left_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_right_left_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_right_left_exit_anim</item>
+    </style>
+
+    <style name="scale_center_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_scale_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_scale_exit_anim</item>
+    </style>
+
+    <style name="scale_down_up_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_scale_top_down_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_scale_top_down_exit_anim</item>
+    </style>
+
+    <style name="scale_lefr_right_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_scale_left_right_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_scale_left_right_exit_anim</item>
+    </style>
+
+    <!--popupWindow的熟悉↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+<!--    底部弹出的dialog-->
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+
+    <style name="Content_sp15_normal" parent="BaseTextStyle">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--水平分割线-->
+    <style name="HLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/colorLine</item>
+    </style>
+    <!--垂直分割线-->
+    <style name="VLineStyle">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorLine</item>
+    </style>
+
+    <!--输入框统一样式-->
+    <style name="EtStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textCursorDrawable">@drawable/shape_edt_cursor</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Content_sp12_normal" parent="BaseTextStyle">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+
+    <!--ScrollView中Item的样式-->
+    <style name="ItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_item_height</item>
+        <item name="android:paddingLeft">@dimen/dp_spacing</item>
+        <item name="android:paddingRight">@dimen/dp_spacing</item>
+    </style>
+</resources>

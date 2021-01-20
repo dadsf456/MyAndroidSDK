@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10"
+    android:orientation="vertical">
+   <com.tool.cs.common.widget.ComplexView
+       android:id="@+id/tv__00"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:minWidth="@dimen/dp_50"
+       android:text="我是内容呀"
+       android:textColor="@color/black"
+       android:textSize="@dimen/sp_18"
+       app:cvGravity="center"
+       android:scaleType="fitXY"
+       app:cvIconPadding="@dimen/dp_100"
+       app:cvIconStart="@drawable/ic_pay_we_chat" />
+
+    <com.tool.cs.common.widget.ComplexView
+        android:id="@+id/cv_01"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="81.5dp"
+        android:layout_marginRight="81.5dp"
+        android:layout_marginBottom="18dp"
+        android:text="按钮"
+        android:scaleType="fitEnd"
+        app:cvIconStart="@drawable/ic_pay_we_chat"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        app:cvCornersRadius="@dimen/dp_20"
+        app:cvDisableBgColor="@color/colorBtnDisableBg"
+        app:cvNormalBgColor="@color/colorBtnNormalBg"
+        app:cvPressedBgColor="@color/colorBtnPressBg"
+        app:cvSelector="standard" />
+
+   <com.tool.cs.common.widget.ComplexView
+       android:id="@+id/cv_02"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:layout_marginLeft="81.5dp"
+       android:layout_marginRight="81.5dp"
+       android:layout_marginBottom="18dp"
+       android:enabled="false"
+       android:text="按钮"
+       android:textColor="@android:color/white"
+       android:textSize="@dimen/sp_18"
+       app:cvCornersRadius="@dimen/dp_20"
+       app:cvIconEnd="@mipmap/ic_launcher"
+       app:cvDisableBgColor="@color/colorBtnDisableBg"
+       app:cvNormalBgColor="@color/colorBtnNormalBg"
+       app:cvPressedBgColor="@color/colorBtnPressBg"
+       app:cvSelector="standard" />
+
+    <com.tool.cs.common.widget.ComplexView
+        android:id="@+id/cv_03"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginLeft="81.5dp"
+        android:layout_marginRight="81.5dp"
+        android:layout_marginBottom="18dp"
+        android:enabled="false"
+        android:text="按钮"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18"
+        app:cvCornersRadius="@dimen/dp_20"
+        app:cvIconTop="@mipmap/ic_launcher"
+        app:cvIconSizeTop="@dimen/dp_100"
+        app:cvDisableBgColor="@color/colorBtnDisableBg"
+        app:cvNormalBgColor="@color/colorBtnNormalBg"
+        app:cvPressedBgColor="@color/colorBtnPressBg"
+        app:cvSelector="standard" />
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:divider="@drawable/shape_horizontal_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <FrameLayout
+        style="@style/ItemStyle"
+        android:layout_height="wrap_content">
+
+        <com.tool.cs.common.widget.AvatarImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginBottom="8.5dp"
+            app:aiv_BoarderColor="@color/gray_e"
+            app:aiv_BoarderWidth="@dimen/dp_0_5"
+            app:aiv_ShowBoarder="true"
+            app:aiv_isCircle="true"
+            tools:src="@drawable/ic_avatar_normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="21dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Content_sp15_normal"
+                tools:text="牛MO王" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                style="@style/Content_sp15_normal"
+                tools:text="134000000000" />
+        </LinearLayout>
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/update_head"
+            style="@style/Content_sp12_normal"
+            android:layout_gravity="center_vertical|end"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_3"
+            android:text="更换头像"
+            android:textColor="@android:color/white"
+            app:cvCornersRadius="@dimen/dp_20"
+            app:cvIconEnd="@drawable/ic_arrow_right"
+            app:cvIconPadding="@dimen/dp_0"
+            app:cvNormalBgColor="#E48587"
+            app:cvTintIconEnd="@android:color/white"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/ItemStyle">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:text="锁友账号" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_phone"
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical|end"
+            tools:text="134000000000" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_name"
+        style="@style/ItemStyle">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:text="锁友昵称" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_name"
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical|end"
+            app:cvClickable="false"
+            app:cvIconEnd="@drawable/ic_arrow_right"
+            tools:text="维度-XXX" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_sex"
+        style="@style/ItemStyle">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:text="性别" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_sex"
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical|end"
+            app:cvClickable="false"
+            app:cvIconEnd="@drawable/ic_arrow_right"
+            tools:text="男" />
+    </FrameLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

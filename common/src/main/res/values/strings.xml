@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_cancel">取消</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_setting">设置</string>
+
+    <string name="dlg_title_permission">跳转系统页面</string>
+    <string name="dlg_content_permission">请授权以下的权限：</string>
+</resources>
