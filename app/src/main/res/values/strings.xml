@@ -25,6 +25,29 @@
     <string name="bar_title_forgot_password">忘记密码</string>
     <string name="bar_title_bind_password">绑定手机</string>
 
+    <string name="bar_title_retrieve_password">找回密码</string>
+    <string name="bar_title_retrieve_pay_password">找回支付密码</string>
+    <string name="bar_title_set_password">设置密码</string>
+    <string name="bar_title_set_pay_password">设置支付密码</string>
+    <string name="text_btn_modify">修  改</string>
+
+    <!--注册页-->
+    <string name="bar_title_register">注册</string>
+    <string name="register_name">昵称：</string>
+    <string name="register_sex">性别：</string>
+    <string name="register_phone">手机号码：</string>
+    <string name="register_code">验证码：</string>
+    <string name="register_password">密码：</string>
+    <string name="register_password_">确认密码：</string>
+    <string name="register_invite">邀请码：</string>
+    <string name="warning_input_correct_phone">请输入正确的手机号</string>
+    <string name="reset_pwd_old">旧密码：</string>
+    <string name="reset_pwd_new">新密码：</string>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
     <!--输入框hint文本-->
     <string name="hint_input_phone">输入手机号</string>
     <string name="hint_input_password">输入密码</string>
@@ -63,8 +86,4 @@
 
     <string name="text_btn_submit">提  交</string>
 
-    <string-array name="sex">
-        <item>男</item>
-        <item>女</item>
-    </string-array>
 </resources>

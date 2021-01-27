@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tool.cs.common.widget.shape.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_24"
+    android:layout_marginRight="@dimen/dp_24"
+    android:divider="@drawable/shape_padding_dp22"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_20"
+    android:showDividers="middle"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shapeCornersRadius="@dimen/dp_5"
+    app:shapeSelectorNormalColor="@color/white"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20.5dp"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:includeFontPadding="false"
+        android:text="@string/bar_title_register"
+        android:textColor="#244C73"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_name" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            style="@style/LoginEtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_input_nickname"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_sex" />
+
+        <ImageButton
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dp_13"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_down"
+            android:tint="#666" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_sex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/hint_select_sex"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/sp_14"
+            app:cvClickable="false"
+            app:cvCornersRadius="@dimen/dp_25"
+            app:cvGravity="left"
+            app:cvStrokeColor="@color/gray_e"
+            app:cvStrokeWidth="@dimen/dp_1"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_phone" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_phone"
+            style="@style/LoginEtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_input_phone"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_code" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_code"
+            style="@style/LoginEtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_input_code"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            tools:ignore="RtlSymmetry" />
+
+        <com.tool.cs.common.widget.ComplexView
+            android:id="@+id/cv_send_code"
+            style="@style/Content_sp12_normal"
+            android:layout_height="@dimen/dp_27"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="8.5dp"
+            android:layout_marginRight="8.5dp"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_3"
+            android:text="@string/text_btn_send_code"
+            android:textColor="@color/white"
+            app:cvCornersRadius="@dimen/dp_30"
+            app:cvDisableBgColor="@color/colorBtnDisableBg"
+            app:cvNormalBgColor="@color/colorBtnNormalBg"
+            app:cvPressedBgColor="@color/colorBtnNormalBg"
+            app:cvSelector="standard" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_password" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            style="@style/LoginEtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_input_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_password_" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_password_"
+            style="@style/LoginEtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_input_password_again"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_item_height">
+
+        <TextView
+            style="@style/Content_sp15_normal"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:minWidth="@dimen/dp_85"
+            android:text="@string/register_invite" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_invite"
+            style="@style/LoginEtStyle"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_input_invite"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingStart="@dimen/dp_85"
+            android:paddingLeft="@dimen/dp_85"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <com.tool.cs.common.widget.ComplexView
+        android:id="@+id/cv_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:enabled="false"
+        android:text="@string/bar_title_register"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:cvCornersRadius="200dp"
+        app:cvDisableBgColor="@color/colorBtnDisableBg"
+        app:cvNormalBgColor="@color/colorBtnNormalBg"
+        app:cvPressedBgColor="@color/colorBtnPressBg"
+        app:cvSelector="standard"
+        app:layout_constraintTop_toBottomOf="@id/ll_container" />
+</com.tool.cs.common.widget.shape.ShapeLinearLayout>

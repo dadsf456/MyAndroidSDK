@@ -30,13 +30,17 @@
             android:value="portrait|landscape" />
 
 
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.RegisterActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.activity.ModifyPhoneActivity"/>
+        <activity android:name=".ui.activity.MainActivity"/>
         <activity android:name=".ui.activity.PopupActivity"/>
         <activity android:name=".ui.activity.DialogActivity"/>
         <activity android:name=".ui.activity.RefreshActivity"/>

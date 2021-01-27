@@ -125,20 +125,20 @@ public interface ApiService {
                                         @Query("type_title") String title,
                                         @Query("contact") String contact);
 
-//    /**
-//     * 提交验证码
-//     */
-//    @GET("web/index.php?r=api/user/submit-pay-code")
-//    Observable<Response> modifyPhone(@Query("mobile") String phone,
-//                                     @Query("code") String code,
-//                                     @Query("type") int type);
-//
-//    /**
-//     * 注册
-//     */
-//    @GET("web/index.php?r=api/passport/register")
-//    Observable<Response<UserToken>> register(@QueryMap Map<String, Object> params);
-//
+    /**
+     * 提交验证码
+     */
+    @GET("web/index.php?r=api/user/submit-pay-code")
+    Observable<Response> modifyPhone(@Query("mobile") String phone,
+                                     @Query("code") String code,
+                                     @Query("type") int type);
+
+    /**
+     * 注册
+     */
+    @GET("web/index.php?r=api/passport/register")
+    Observable<Response<UserToken>> register(@QueryMap Map<String, Object> params);
+
     /**
      * 登录
      */

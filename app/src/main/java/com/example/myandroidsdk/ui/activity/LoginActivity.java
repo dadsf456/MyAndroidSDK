@@ -3,6 +3,7 @@ package com.example.myandroidsdk.ui.activity;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.InputType;
@@ -261,6 +262,26 @@ public class LoginActivity extends BaseBgActivity {
         LogUtils.i(TAG, params.toString());
         return params;
     }
+
+    /**
+     * 注册
+     */
+    @OnClick(R.id.tv_register)
+    public void onClickRegister() {
+        startActivity(RegisterActivity.class);
+    }
+
+    /**
+     * 忘记密码
+     */
+    @OnClick(R.id.tv_reset_pwd)
+    public void onClickResetPwd() {
+        Bundle bundle = new Bundle();
+        bundle.putString("title", getString(R.string.bar_title_retrieve_password));
+        bundle.putInt("type", ModifyPhoneActivity.MODIFY_PWD);
+        startActivity(ModifyPhoneActivity.class, bundle);
+    }
+
 
     @OnClick(R.id.cv_send_code)
     public void onClickSendCode() {
